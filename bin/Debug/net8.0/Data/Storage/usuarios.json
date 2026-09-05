@@ -1,0 +1,30 @@
+[
+  {
+    "Id": 1,
+    "Email": "admin@vaultkey.com.br",
+    "SenhaHash": "$2a$11$XWC8rmjCNKqRzvWt0fC3ae3OLk/.hnP1oZWRgng/G4wQs0e8GQLQy",
+    "Role": "Admin",
+    "CriadoEm": "2026-09-05T00:47:07.3360835Z"
+  },
+  {
+    "Id": 2,
+    "Email": "robert.batistadasilva@vaultkey.com.br",
+    "SenhaHash": "$2a$11$wd0cdQ5lf38Q/qLNtU7mou0xUCgQcuudgUbzGaVhC.WfESd4uxQ0O",
+    "Role": "Funcionario",
+    "CriadoEm": "2026-09-05T01:10:07.2188467Z"
+  },
+  {
+    "Id": 3,
+    "Email": "robert.batistadasilva1@vaultkey.com.br",
+    "SenhaHash": "$2a$11$84IxRQMejaSTX6nNRLAMzebXR6nF/jJLaFKWhMod6NPSWE7ev3sJ6",
+    "Role": "Funcionario",
+    "CriadoEm": "2026-09-05T01:10:27.9129993Z"
+  },
+  {
+    "Id": 4,
+    "Email": "lucas.souzasilva@vaultkey.com.br",
+    "SenhaHash": "$2a$11$.PAqbthlxg/P2qcs1mDZs.Qjy2HWeX.A2uIoXS9ctOyxssORG7I3m",
+    "Role": "Funcionario",
+    "CriadoEm": "2026-09-05T01:11:51.7660919Z"
+  }
+]

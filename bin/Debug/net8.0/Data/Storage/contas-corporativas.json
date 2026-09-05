@@ -1,0 +1,47 @@
+[
+  {
+    "Id": 1,
+    "UserId": 2,
+    "User": null,
+    "Nome": "Robert",
+    "Sobrenome": "Batista Da Silva",
+    "Cpf": "50991676831",
+    "Departamento": "N\u00E3o definido",
+    "EmailCorporativo": "robert.batistadasilva@vaultkey.com.br",
+    "SenhaCriptografada": "pVqEEl/4retAP6UOWse9kbXJXmFO0PViHczel5cFpJ0=",
+    "SenhaIv": "4pxygyYd/fs2ikr6OcvQsw==",
+    "Ativo": true,
+    "CriadoEm": "2026-09-05T01:10:08.2602033Z",
+    "AtualizadoEm": null
+  },
+  {
+    "Id": 2,
+    "UserId": 3,
+    "User": null,
+    "Nome": "Robert",
+    "Sobrenome": "Batista Da Silva",
+    "Cpf": "51595614800",
+    "Departamento": "N\u00E3o definido",
+    "EmailCorporativo": "robert.batistadasilva1@vaultkey.com.br",
+    "SenhaCriptografada": "/XRsOSs72T6WcKoA45CFa04GEsKQcRI7bthK9cy61hg=",
+    "SenhaIv": "fpV7LQORlafkvsyMoU9lZw==",
+    "Ativo": true,
+    "CriadoEm": "2026-09-05T01:10:28.4870649Z",
+    "AtualizadoEm": null
+  },
+  {
+    "Id": 3,
+    "UserId": 4,
+    "User": null,
+    "Nome": "Lucas",
+    "Sobrenome": "Souza silva",
+    "Cpf": "55824445800",
+    "Departamento": "N\u00E3o definido",
+    "EmailCorporativo": "lucas.souzasilva@vaultkey.com.br",
+    "SenhaCriptografada": "fTnLKE\u002BiM9ntF/HgH5TJQHSjNxt0lkbwQDq\u002BoCCMR2U=",
+    "SenhaIv": "wr2VPAVff/G1G0/zcoDAMQ==",
+    "Ativo": true,
+    "CriadoEm": "2026-09-05T01:11:52.3541558Z",
+    "AtualizadoEm": null
+  }
+]

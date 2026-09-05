@@ -2,82 +2,68 @@ using appointmentapi.Data;
 using appointmentapi.DTOs.Auth;
 using appointmentapi.Models.AuthEntity;
 using appointmentapi.Services.Interface;
-using appointmentapi.Settings;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Options;
-using Microsoft.IdentityModel.Tokens;
-using System.IdentityModel.Tokens.Jwt;
-using System.Security.Claims;
-using System.Text;
 
 namespace appointmentapi.Services
 {
     public class AuthService : IAuthService
     {
-        private readonly AppDbContext _context;
-        private readonly JwtSettings _jwtSettings;
+        private readonly JsonDataStore _store;
+        private const string ARQUIVO_USUARIOS = "usuarios.json";
 
-        public AuthService(AppDbContext context, IOptions<JwtSettings> jwtSettings)
+        public AuthService(JsonDataStore store)
         {
-            _context = context;
-            _jwtSettings = jwtSettings.Value;
+            _store = store;
         }
 
-        public async Task<AuthResponseDTO?> RegistrarAsync(RegisterDTO dto)
+        public async Task<User?> SeedAdminAsync(RegisterDTO dto)
         {
-            var emailJaExiste = await _context.Users.AnyAsync(u => u.Email == dto.Email);
-            if (emailJaExiste) return null;
+            var usuarios = await _store.LerAsync<User>(ARQUIVO_USUARIOS);
+            if (usuarios.Count > 0) return null;
 
-            var novoUsuario = new User
+            var admin = new User
             {
+                Id = 1,
                 Email = dto.Email,
-                SenhaHash = BCrypt.Net.BCrypt.HashPassword(dto.Senha)
+                SenhaHash = BCrypt.Net.BCrypt.HashPassword(dto.Senha),
+                Role = "Admin"
             };
 
-            _context.Users.Add(novoUsuario);
-            await _context.SaveChangesAsync();
+            usuarios.Add(admin);
+            await _store.SalvarAsync(ARQUIVO_USUARIOS, usuarios);
 
-            return GerarToken(novoUsuario);
+            return admin;
         }
 
-        public async Task<AuthResponseDTO?> LoginAsync(LoginDTO dto)
+        public async Task<User?> ValidarLoginAsync(LoginDTO dto)
         {
-            var usuario = await _context.Users.FirstOrDefaultAsync(u => u.Email == dto.Email);
+            var usuarios = await _store.LerAsync<User>(ARQUIVO_USUARIOS);
+            var usuario = usuarios.FirstOrDefault(u => u.Email == dto.Email);
             if (usuario == null) return null;
 
             bool senhaValida = BCrypt.Net.BCrypt.Verify(dto.Senha, usuario.SenhaHash);
             if (!senhaValida) return null;
 
-            return GerarToken(usuario);
+            return usuario;
         }
 
-        private AuthResponseDTO GerarToken(User usuario)
+        public async Task<User> CriarUsuarioFuncionarioAsync(string email, string senha)
         {
-            var chave = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_jwtSettings.SecretKey));
-            var credenciais = new SigningCredentials(chave, SecurityAlgorithms.HmacSha256);
+            var usuarios = await _store.LerAsync<User>(ARQUIVO_USUARIOS);
 
-            var claims = new[]
+            var novoId = usuarios.Count > 0 ? usuarios.Max(u => u.Id) + 1 : 1;
+
+            var usuario = new User
             {
-                new Claim(JwtRegisteredClaimNames.Sub, usuario.Id.ToString()),
-                new Claim(JwtRegisteredClaimNames.Email, usuario.Email)
+                Id = novoId,
+                Email = email,
+                SenhaHash = BCrypt.Net.BCrypt.HashPassword(senha),
+                Role = "Funcionario"
             };
 
-            var expiracao = DateTime.UtcNow.AddMinutes(_jwtSettings.ExpiryMinutes);
+            usuarios.Add(usuario);
+            await _store.SalvarAsync(ARQUIVO_USUARIOS, usuarios);
 
-            var token = new JwtSecurityToken(
-                issuer: _jwtSettings.Issuer,
-                audience: _jwtSettings.Audience,
-                claims: claims,
-                expires: expiracao,
-                signingCredentials: credenciais
-            );
-
-            return new AuthResponseDTO
-            {
-                Token = new JwtSecurityTokenHandler().WriteToken(token),
-                Email = usuario.Email,
-                ExpiraEm = expiracao
-            };
+            return usuario;
         }
     }
 }

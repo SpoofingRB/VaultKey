@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\rtemp\\Downloads\\VaultKey\\Backend\\appointmentapi\\appointmentapi\\appointmentapi.csproj": {}
+    "C:\\Users\\rtemp\\Downloads\\VaultKey\\backend\\appointmentapi\\appointmentapi\\appointmentapi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\rtemp\\Downloads\\VaultKey\\Backend\\appointmentapi\\appointmentapi\\appointmentapi.csproj": {
+    "C:\\Users\\rtemp\\Downloads\\VaultKey\\backend\\appointmentapi\\appointmentapi\\appointmentapi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rtemp\\Downloads\\VaultKey\\Backend\\appointmentapi\\appointmentapi\\appointmentapi.csproj",
+        "projectUniqueName": "C:\\Users\\rtemp\\Downloads\\VaultKey\\backend\\appointmentapi\\appointmentapi\\appointmentapi.csproj",
         "projectName": "appointmentapi",
-        "projectPath": "C:\\Users\\rtemp\\Downloads\\VaultKey\\Backend\\appointmentapi\\appointmentapi\\appointmentapi.csproj",
+        "projectPath": "C:\\Users\\rtemp\\Downloads\\VaultKey\\backend\\appointmentapi\\appointmentapi\\appointmentapi.csproj",
         "packagesPath": "C:\\Users\\rtemp\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rtemp\\Downloads\\VaultKey\\Backend\\appointmentapi\\appointmentapi\\obj\\",
+        "outputPath": "C:\\Users\\rtemp\\Downloads\\VaultKey\\backend\\appointmentapi\\appointmentapi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\rtemp\\AppData\\Roaming\\NuGet\\NuGet.Config"

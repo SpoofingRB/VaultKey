@@ -16,7 +16,7 @@
   {
     "Id": 3,
     "Email": "robert.batistadasilva1@vaultkey.com.br",
-    "SenhaHash": "$2a$11$84IxRQMejaSTX6nNRLAMzebXR6nF/jJLaFKWhMod6NPSWE7ev3sJ6",
+    "SenhaHash": "$2a$11$z7rw0W9hxaHG0od./RSaieLMXvUY9.qg4XLDBVYUZDp6xW7bhw6z.",
     "Role": "Funcionario",
     "CriadoEm": "2026-09-05T01:10:27.9129993Z"
   },
@@ -89,5 +89,47 @@
     "SenhaHash": "$2a$11$ZT11X/qNkf3i4aT.eVitWuoYRmrMqgDvXuEUNpWMBcRJaS.Uy8k0y",
     "Role": "Funcionario",
     "CriadoEm": "2026-09-05T01:24:21.7548632Z"
+  },
+  {
+    "Id": 14,
+    "Email": "marta.bispo@vaultkey.com.br",
+    "SenhaHash": "$2a$11$cQ3H/IbHzXcSOzkDGPQ/cunC8O/t5bhYJKmQ0EhBQNRAPt0qVFFQe",
+    "Role": "Funcionario",
+    "CriadoEm": "2026-09-05T10:41:42.1401981Z"
+  },
+  {
+    "Id": 15,
+    "Email": "marta.@vaultkey.com.br",
+    "SenhaHash": "$2a$11$gT.xwUGVL/qzlJWbcYV2K.iv.p/eJlGj67CES6IMpOLHyYQY8zQ/O",
+    "Role": "Funcionario",
+    "CriadoEm": "2026-09-05T10:43:07.7144662Z"
+  },
+  {
+    "Id": 16,
+    "Email": "teste.teste5@vaultkey.com.br",
+    "SenhaHash": "$2a$11$2bAtGk2LCPI0vXASKlT2Xu6MQmxIjkYYdZDmd7CK.1xneoJAxPh7C",
+    "Role": "Funcionario",
+    "CriadoEm": "2026-09-05T10:43:38.5870315Z"
+  },
+  {
+    "Id": 17,
+    "Email": "teste.teste6@vaultkey.com.br",
+    "SenhaHash": "$2a$11$DmT5C8roc4jUnVGtdcGXZ.SfvUYIeEWg.hl.qZwzToXkAwMof/8Hu",
+    "Role": "Funcionario",
+    "CriadoEm": "2026-09-05T10:46:08.8373546Z"
+  },
+  {
+    "Id": 18,
+    "Email": "diego.oliveira@vaultkey.com.br",
+    "SenhaHash": "$2a$11$aA3.g4GPFl./njELqClXAuKZFl5eZIf//zoYWPBcwOWDBkS6R0jJe",
+    "Role": "Funcionario",
+    "CriadoEm": "2026-09-05T10:52:40.3738926Z"
+  },
+  {
+    "Id": 19,
+    "Email": "testet.tese@vaultkey.com.br",
+    "SenhaHash": "$2a$11$UTxh.OgjN5RHQsWpVO0mseSzGHzpOmFdeIebAcyipkrGi6E4rUpVe",
+    "Role": "Funcionario",
+    "CriadoEm": "2026-09-05T10:55:17.1541096Z"
   }
 ]

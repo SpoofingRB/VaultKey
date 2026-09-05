@@ -23,11 +23,11 @@
     "Cpf": "51595614800",
     "Departamento": "N\u00E3o definido",
     "EmailCorporativo": "robert.batistadasilva1@vaultkey.com.br",
-    "SenhaCriptografada": "/XRsOSs72T6WcKoA45CFa04GEsKQcRI7bthK9cy61hg=",
-    "SenhaIv": "fpV7LQORlafkvsyMoU9lZw==",
-    "Ativo": true,
+    "SenhaCriptografada": "iCxW8oRFB1fGuCHQCiQKtSxtKsc3psEzoBD33yC94S0=",
+    "SenhaIv": "p/jIHJxBK1WTpKqu/AT2IQ==",
+    "Ativo": false,
     "CriadoEm": "2026-09-05T01:10:28.4870649Z",
-    "AtualizadoEm": null
+    "AtualizadoEm": "2026-09-05T10:53:52.4149595Z"
   },
   {
     "Id": 3,
@@ -40,9 +40,9 @@
     "EmailCorporativo": "lucas.souzasilva@vaultkey.com.br",
     "SenhaCriptografada": "fTnLKE\u002BiM9ntF/HgH5TJQHSjNxt0lkbwQDq\u002BoCCMR2U=",
     "SenhaIv": "wr2VPAVff/G1G0/zcoDAMQ==",
-    "Ativo": true,
+    "Ativo": false,
     "CriadoEm": "2026-09-05T01:11:52.3541558Z",
-    "AtualizadoEm": null
+    "AtualizadoEm": "2026-09-05T01:29:52.4385059Z"
   },
   {
     "Id": 4,
@@ -55,9 +55,9 @@
     "EmailCorporativo": "teste.testeteste@vaultkey.com.br",
     "SenhaCriptografada": "56FpSA7EBz4fY/zDWUUuX5HTn6KfNa1lVpT9VN9FUBI=",
     "SenhaIv": "C1hK1VjsWWjxhdKkK6\u002Bu8A==",
-    "Ativo": true,
+    "Ativo": false,
     "CriadoEm": "2026-09-05T01:14:41.1232149Z",
-    "AtualizadoEm": null
+    "AtualizadoEm": "2026-09-05T10:53:47.8476302Z"
   },
   {
     "Id": 5,
@@ -178,5 +178,95 @@
     "Ativo": true,
     "CriadoEm": "2026-09-05T01:24:22.3226091Z",
     "AtualizadoEm": null
+  },
+  {
+    "Id": 13,
+    "UserId": 14,
+    "User": null,
+    "Nome": "marta",
+    "Sobrenome": "bispo",
+    "Cpf": "00000000000",
+    "Departamento": "N\u00E3o definido",
+    "EmailCorporativo": "marta.bispo@vaultkey.com.br",
+    "SenhaCriptografada": "LBkLL8EZWG0PuCrIth8bAKMQdZgwWWiF1w207Y1y73k=",
+    "SenhaIv": "lnY\u002BwsnPg/sCkwJ20C2dkg==",
+    "Ativo": true,
+    "CriadoEm": "2026-09-05T10:41:43.2532869Z",
+    "AtualizadoEm": null
+  },
+  {
+    "Id": 14,
+    "UserId": 15,
+    "User": null,
+    "Nome": "marta",
+    "Sobrenome": "",
+    "Cpf": "0100000000",
+    "Departamento": "N\u00E3o definido",
+    "EmailCorporativo": "marta.@vaultkey.com.br",
+    "SenhaCriptografada": "Pk2nDvyoSC8cmlAlFe9XUiL347WHRPlcO/3LeM7a0yQ=",
+    "SenhaIv": "Xv8Alt/n\u002BYyT4xi15KKylA==",
+    "Ativo": true,
+    "CriadoEm": "2026-09-05T10:43:08.0818862Z",
+    "AtualizadoEm": null
+  },
+  {
+    "Id": 15,
+    "UserId": 16,
+    "User": null,
+    "Nome": "teste",
+    "Sobrenome": "teste",
+    "Cpf": "00100230123",
+    "Departamento": "N\u00E3o definido",
+    "EmailCorporativo": "teste.teste5@vaultkey.com.br",
+    "SenhaCriptografada": "IDbmfoun7vo8FyZt5eg52B3erLWxmrCY2U4oJRa3cfg=",
+    "SenhaIv": "8r1ps7d1/VJNFgF5EeFONA==",
+    "Ativo": true,
+    "CriadoEm": "2026-09-05T10:43:39.1465694Z",
+    "AtualizadoEm": null
+  },
+  {
+    "Id": 16,
+    "UserId": 17,
+    "User": null,
+    "Nome": "teste",
+    "Sobrenome": "teste",
+    "Cpf": "12332112312",
+    "Departamento": "N\u00E3o definido",
+    "EmailCorporativo": "teste.teste6@vaultkey.com.br",
+    "SenhaCriptografada": "fc6ToenuR2m1lAc2uEoNZKnyk4vTrRZX0QRqX9SlGAo=",
+    "SenhaIv": "opPZiQjDvCBSe/ID6G8ryQ==",
+    "Ativo": true,
+    "CriadoEm": "2026-09-05T10:46:09.375074Z",
+    "AtualizadoEm": null
+  },
+  {
+    "Id": 17,
+    "UserId": 18,
+    "User": null,
+    "Nome": "Diego",
+    "Sobrenome": "Oliveira",
+    "Cpf": "12545878945",
+    "Departamento": "N\u00E3o definido",
+    "EmailCorporativo": "diego.oliveira@vaultkey.com.br",
+    "SenhaCriptografada": "uFjYAWaNR\u002BfmDY2Aw2Jnl8Rc7\u002B52JGpASC8K8HktNRU=",
+    "SenhaIv": "R5dqKvENbC1askYG9Flqig==",
+    "Ativo": true,
+    "CriadoEm": "2026-09-05T10:52:40.9311128Z",
+    "AtualizadoEm": null
+  },
+  {
+    "Id": 18,
+    "UserId": 19,
+    "User": null,
+    "Nome": "testet",
+    "Sobrenome": "tese",
+    "Cpf": "54868478945",
+    "Departamento": "N\u00E3o definido",
+    "EmailCorporativo": "testet.tese@vaultkey.com.br",
+    "SenhaCriptografada": "VoPlydGFpbgFVunLf6bA55eQ1b8Srdsm2W5k7lVeijs=",
+    "SenhaIv": "5/YfHeDb9d5B\u002BaTCl8jD\u002Bw==",
+    "Ativo": true,
+    "CriadoEm": "2026-09-05T10:55:17.6908404Z",
+    "AtualizadoEm": "2026-09-05T10:55:51.2840837Z"
   }
 ]

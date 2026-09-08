@@ -71,5 +71,15 @@ namespace appointmentapi.Controllers
 
             return NoContent();
         }
+
+        [HttpDelete("{id}")]
+        [Authorize(Roles = "Admin")]
+        public async Task<IActionResult> Excluir(int id)
+        {
+            var sucesso = await _service.ExcluirAsync(id);
+            if (!sucesso) return NotFound();
+
+            return NoContent();
+        }
     }
 }

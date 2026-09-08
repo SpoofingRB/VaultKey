@@ -10,5 +10,6 @@ namespace appointmentapi.Services.Interface
         Task<string?> RevelarSenhaAsync(int contaId);
         Task<string?> ResetarSenhaAsync(int contaId);
         Task<bool> AlterarStatusAsync(int contaId, bool ativo);
+        Task<bool> ExcluirAsync(int contaId);
     }
 }

@@ -5,6 +5,7 @@ using appointmentapi.Models.CorporativoEntity;
 using appointmentapi.Services.Interface;
 using appointmentapi.Settings;
 using Microsoft.Extensions.Options;
+using System.Linq;
 using System.Security.Cryptography;
 using System.Text.RegularExpressions;
 
@@ -43,7 +44,7 @@ namespace appointmentapi.Services
 
         public async Task<ContaCorporativaResponseDTO> CriarFuncionarioAsync(CriarFuncionarioDTO dto)
         {
-            return await CriarContaAsync(dto.Nome, dto.Sobrenome, cpf: "", dto.Departamento);
+            return await CriarContaAsync(dto.Nome, dto.Sobrenome, "", dto.Departamento);
         }
 
         public async Task<ContaCorporativaResponseDTO?> CriarViaOnboardingAsync(OnboardingDTO dto)
@@ -53,7 +54,9 @@ namespace appointmentapi.Services
 
             var cpfLimpo = Regex.Replace(dto.Cpf, @"[^0-9]", "");
 
-            // Evita duplicar conta para o mesmo CPF
+            if (!CpfValido(cpfLimpo))
+                return null;
+
             var contasExistentes = await _store.LerAsync<ContaCorporativa>(ARQUIVO_CONTAS);
             if (contasExistentes.Any(c => c.Cpf == cpfLimpo))
                 return null;
@@ -62,7 +65,7 @@ namespace appointmentapi.Services
             var nome = partesNome[0];
             var sobrenome = partesNome.Length > 1 ? partesNome[1] : "";
 
-            return await CriarContaAsync(nome, sobrenome, cpfLimpo, departamento: "Não definido");
+            return await CriarContaAsync(nome, sobrenome, cpfLimpo, "Não definido");
         }
 
         private async Task<ContaCorporativaResponseDTO> CriarContaAsync(string nome, string sobrenome, string cpf, string departamento)
@@ -149,6 +152,26 @@ namespace appointmentapi.Services
             return true;
         }
 
+        public async Task<bool> ExcluirAsync(int contaId)
+        {
+            var contas = await _store.LerAsync<ContaCorporativa>(ARQUIVO_CONTAS);
+            var conta = contas.FirstOrDefault(c => c.Id == contaId);
+            if (conta == null) return false;
+
+            contas.Remove(conta);
+            await _store.SalvarAsync(ARQUIVO_CONTAS, contas);
+
+            var usuarios = await _store.LerAsync<User>(ARQUIVO_USUARIOS);
+            var usuario = usuarios.FirstOrDefault(u => u.Id == conta.UserId);
+            if (usuario != null)
+            {
+                usuarios.Remove(usuario);
+                await _store.SalvarAsync(ARQUIVO_USUARIOS, usuarios);
+            }
+
+            return true;
+        }
+
         private ContaCorporativaResponseDTO MapearParaDTO(ContaCorporativa c) => new()
         {
             Id = c.Id,
@@ -220,5 +243,32 @@ namespace appointmentapi.Services
         }
 
         private int RandomIndice(int max) => RandomNumberGenerator.GetInt32(max);
+
+        private bool CpfValido(string cpf)
+        {
+            if (cpf.Length != 11) return false;
+            if (cpf.Distinct().Count() == 1) return false;
+
+            var multiplicadores1 = new[] { 10, 9, 8, 7, 6, 5, 4, 3, 2 };
+            var multiplicadores2 = new[] { 11, 10, 9, 8, 7, 6, 5, 4, 3, 2 };
+
+            var tempCpf = cpf.Substring(0, 9);
+            var soma = 0;
+            for (int i = 0; i < 9; i++)
+                soma += int.Parse(tempCpf[i].ToString()) * multiplicadores1[i];
+
+            var resto = soma % 11;
+            var digito1 = resto < 2 ? 0 : 11 - resto;
+
+            tempCpf += digito1;
+            soma = 0;
+            for (int i = 0; i < 10; i++)
+                soma += int.Parse(tempCpf[i].ToString()) * multiplicadores2[i];
+
+            resto = soma % 11;
+            var digito2 = resto < 2 ? 0 : 11 - resto;
+
+            return cpf.EndsWith($"{digito1}{digito2}");
+        }
     }
 }

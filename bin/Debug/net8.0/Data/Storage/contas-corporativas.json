@@ -25,9 +25,9 @@
     "EmailCorporativo": "robert.batistadasilva1@vaultkey.com.br",
     "SenhaCriptografada": "iCxW8oRFB1fGuCHQCiQKtSxtKsc3psEzoBD33yC94S0=",
     "SenhaIv": "p/jIHJxBK1WTpKqu/AT2IQ==",
-    "Ativo": false,
+    "Ativo": true,
     "CriadoEm": "2026-09-05T01:10:28.4870649Z",
-    "AtualizadoEm": "2026-09-05T10:53:52.4149595Z"
+    "AtualizadoEm": "2026-09-05T22:38:30.2598932Z"
   },
   {
     "Id": 3,
@@ -40,9 +40,9 @@
     "EmailCorporativo": "lucas.souzasilva@vaultkey.com.br",
     "SenhaCriptografada": "fTnLKE\u002BiM9ntF/HgH5TJQHSjNxt0lkbwQDq\u002BoCCMR2U=",
     "SenhaIv": "wr2VPAVff/G1G0/zcoDAMQ==",
-    "Ativo": false,
+    "Ativo": true,
     "CriadoEm": "2026-09-05T01:11:52.3541558Z",
-    "AtualizadoEm": "2026-09-05T01:29:52.4385059Z"
+    "AtualizadoEm": "2026-09-05T22:38:31.0323862Z"
   },
   {
     "Id": 4,
@@ -55,9 +55,9 @@
     "EmailCorporativo": "teste.testeteste@vaultkey.com.br",
     "SenhaCriptografada": "56FpSA7EBz4fY/zDWUUuX5HTn6KfNa1lVpT9VN9FUBI=",
     "SenhaIv": "C1hK1VjsWWjxhdKkK6\u002Bu8A==",
-    "Ativo": false,
+    "Ativo": true,
     "CriadoEm": "2026-09-05T01:14:41.1232149Z",
-    "AtualizadoEm": "2026-09-05T10:53:47.8476302Z"
+    "AtualizadoEm": "2026-09-05T22:38:32.002179Z"
   },
   {
     "Id": 5,
@@ -250,9 +250,9 @@
     "EmailCorporativo": "diego.oliveira@vaultkey.com.br",
     "SenhaCriptografada": "uFjYAWaNR\u002BfmDY2Aw2Jnl8Rc7\u002B52JGpASC8K8HktNRU=",
     "SenhaIv": "R5dqKvENbC1askYG9Flqig==",
-    "Ativo": true,
+    "Ativo": false,
     "CriadoEm": "2026-09-05T10:52:40.9311128Z",
-    "AtualizadoEm": null
+    "AtualizadoEm": "2026-09-08T02:10:56.4196424Z"
   },
   {
     "Id": 18,
@@ -265,8 +265,8 @@
     "EmailCorporativo": "testet.tese@vaultkey.com.br",
     "SenhaCriptografada": "VoPlydGFpbgFVunLf6bA55eQ1b8Srdsm2W5k7lVeijs=",
     "SenhaIv": "5/YfHeDb9d5B\u002BaTCl8jD\u002Bw==",
-    "Ativo": true,
+    "Ativo": false,
     "CriadoEm": "2026-09-05T10:55:17.6908404Z",
-    "AtualizadoEm": "2026-09-05T10:55:51.2840837Z"
+    "AtualizadoEm": "2026-09-08T02:10:54.8550968Z"
   }
 ]

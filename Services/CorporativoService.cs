@@ -42,9 +42,25 @@ namespace appointmentapi.Services
                 .ToList();
         }
 
-        public async Task<ContaCorporativaResponseDTO> CriarFuncionarioAsync(CriarFuncionarioDTO dto)
+        public async Task<ContaCorporativaResponseDTO?> CriarFuncionarioAsync(CriarFuncionarioDTO dto)
         {
-            return await CriarContaAsync(dto.Nome, dto.Sobrenome, "", dto.Departamento);
+            if (string.IsNullOrWhiteSpace(dto.NomeCompleto) || string.IsNullOrWhiteSpace(dto.Cpf))
+                return null;
+
+            var cpfLimpo = Regex.Replace(dto.Cpf, @"[^0-9]", "");
+
+            if (!CpfValido(cpfLimpo))
+                return null;
+
+            var contasExistentes = await _store.LerAsync<ContaCorporativa>(ARQUIVO_CONTAS);
+            if (contasExistentes.Any(c => c.Cpf == cpfLimpo))
+                return null;
+
+            var partesNome = dto.NomeCompleto.Trim().Split(' ', 2);
+            var nome = partesNome[0];
+            var sobrenome = partesNome.Length > 1 ? partesNome[1] : "";
+
+            return await CriarContaAsync(nome, sobrenome, cpfLimpo, dto.Departamento);
         }
 
         public async Task<ContaCorporativaResponseDTO?> CriarViaOnboardingAsync(OnboardingDTO dto)

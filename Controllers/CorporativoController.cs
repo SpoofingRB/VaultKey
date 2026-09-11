@@ -35,10 +35,10 @@ namespace appointmentapi.Controllers
         [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Criar(CriarFuncionarioDTO dto)
         {
-            if (string.IsNullOrWhiteSpace(dto.Nome) || string.IsNullOrWhiteSpace(dto.Sobrenome))
-                return BadRequest("Nome e sobrenome são obrigatórios.");
-
             var conta = await _service.CriarFuncionarioAsync(dto);
+            if (conta == null)
+                return BadRequest("Não foi possível criar o funcionário. Verifique o CPF ou se ele já está cadastrado.");
+
             return Ok(conta);
         }
 

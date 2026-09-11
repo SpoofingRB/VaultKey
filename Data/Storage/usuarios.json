@@ -7,24 +7,17 @@
     "CriadoEm": "2026-09-05T00:47:07.3360835Z"
   },
   {
-    "Id": 4,
-    "Email": "lucas.souzasilva@vaultkey.com.br",
-    "SenhaHash": "$2a$11$.PAqbthlxg/P2qcs1mDZs.Qjy2HWeX.A2uIoXS9ctOyxssORG7I3m",
-    "Role": "Funcionario",
-    "CriadoEm": "2026-09-05T01:11:51.7660919Z"
-  },
-  {
-    "Id": 18,
-    "Email": "diego.oliveira@vaultkey.com.br",
-    "SenhaHash": "$2a$11$aA3.g4GPFl./njELqClXAuKZFl5eZIf//zoYWPBcwOWDBkS6R0jJe",
-    "Role": "Funcionario",
-    "CriadoEm": "2026-09-05T10:52:40.3738926Z"
-  },
-  {
     "Id": 20,
-    "Email": "samara.graziela@vaultkey.com.br",
-    "SenhaHash": "$2a$11$MKoxAc9snfUstzt./5.oq.7cLhEA3Gaj/k16YFpjcL/Jage8VHcb6",
+    "Email": "gabriel.roma@vaultkey.com.br",
+    "SenhaHash": "$2a$11$WV52P.UpgsSIRaK/fLsTT.4pWpkeX0j2SxAXq8Hoipd/fp5nTHPdS",
     "Role": "Funcionario",
-    "CriadoEm": "2026-09-08T02:20:18.6668558Z"
+    "CriadoEm": "2026-09-11T00:32:26.0268873Z"
+  },
+  {
+    "Id": 21,
+    "Email": "enzo.melo@vaultkey.com.br",
+    "SenhaHash": "$2a$11$lcSPbAvwpgfu5G5fW4i6kOraFJqUAlTdOwog.7gAerg35RzDQ7DC6",
+    "Role": "Funcionario",
+    "CriadoEm": "2026-09-11T00:38:07.9614917Z"
   }
 ]

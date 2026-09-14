@@ -7,17 +7,38 @@
     "CriadoEm": "2026-09-05T00:47:07.3360835Z"
   },
   {
-    "Id": 20,
-    "Email": "gabriel.roma@vaultkey.com.br",
-    "SenhaHash": "$2a$11$WV52P.UpgsSIRaK/fLsTT.4pWpkeX0j2SxAXq8Hoipd/fp5nTHPdS",
+    "Id": 22,
+    "Email": "marisa.dias@vaultkey.com.br",
+    "SenhaHash": "$2a$11$mhDVWUyLmkulGlwafxuqG.hMs/EIEtRm1UNZFKj2ziX7VnCzugEbG",
     "Role": "Funcionario",
-    "CriadoEm": "2026-09-11T00:32:26.0268873Z"
+    "CriadoEm": "2026-09-14T17:19:19.5708018Z"
   },
   {
-    "Id": 21,
-    "Email": "enzo.melo@vaultkey.com.br",
-    "SenhaHash": "$2a$11$lcSPbAvwpgfu5G5fW4i6kOraFJqUAlTdOwog.7gAerg35RzDQ7DC6",
+    "Id": 23,
+    "Email": "larissa.barros@vaultkey.com.br",
+    "SenhaHash": "$2a$11$1O5FpSus.r6TSuzXNL.NIOxsMVl7koHZ6yDZOVJcOSt6PIsFRYYp2",
     "Role": "Funcionario",
-    "CriadoEm": "2026-09-11T00:38:07.9614917Z"
+    "CriadoEm": "2026-09-14T17:19:48.8138669Z"
+  },
+  {
+    "Id": 24,
+    "Email": "samara.graziela@vaultkey.com.br",
+    "SenhaHash": "$2a$11$YIJbp.bzN09ZStT0Di.sReJ8HsnuywIWQHP0qU.mGrkCouDqFenvi",
+    "Role": "Funcionario",
+    "CriadoEm": "2026-09-14T17:20:20.3694948Z"
+  },
+  {
+    "Id": 25,
+    "Email": "mateus.santos@vaultkey.com.br",
+    "SenhaHash": "$2a$11$dnKcfCQV5QNRDFTeu5xf/uWn/XYYdAHompStPQJgaaxQirNbrRKSu",
+    "Role": "Funcionario",
+    "CriadoEm": "2026-09-14T17:21:01.6547525Z"
+  },
+  {
+    "Id": 26,
+    "Email": "lauane.gabriela@vaultkey.com.br",
+    "SenhaHash": "$2a$11$OVDcz9x6Gtmf5xvwZd1.Vu5C8Se16PmxlI.uodHqnz7NlCK3SwxLy",
+    "Role": "Funcionario",
+    "CriadoEm": "2026-09-14T17:35:32.2284405Z"
   }
 ]

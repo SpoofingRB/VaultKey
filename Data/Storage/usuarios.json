@@ -21,13 +21,6 @@
     "CriadoEm": "2026-09-14T17:19:48.8138669Z"
   },
   {
-    "Id": 24,
-    "Email": "samara.graziela@vaultkey.com.br",
-    "SenhaHash": "$2a$11$YIJbp.bzN09ZStT0Di.sReJ8HsnuywIWQHP0qU.mGrkCouDqFenvi",
-    "Role": "Funcionario",
-    "CriadoEm": "2026-09-14T17:20:20.3694948Z"
-  },
-  {
     "Id": 25,
     "Email": "mateus.santos@vaultkey.com.br",
     "SenhaHash": "$2a$11$dnKcfCQV5QNRDFTeu5xf/uWn/XYYdAHompStPQJgaaxQirNbrRKSu",
@@ -35,10 +28,17 @@
     "CriadoEm": "2026-09-14T17:21:01.6547525Z"
   },
   {
-    "Id": 26,
-    "Email": "erlinda.ruble@vaultkey.com.br",
-    "SenhaHash": "$2a$11$p7lXim9tUk9H7jRWGe5hOu8dywVsv3wiY9hQQzMocuZkZI.voJwBa",
+    "Id": 29,
+    "Email": "larissa.fernandes@vaultkey.com.br",
+    "SenhaHash": "$2a$11$gOpt14XpkNqYJOow1UBWi.ODY3PFmSOM3vF7kE8OmkAOwlcmb65e2",
     "Role": "Funcionario",
-    "CriadoEm": "2026-09-18T05:04:04.2720631Z"
+    "CriadoEm": "2026-09-18T06:03:31.7453209Z"
+  },
+  {
+    "Id": 30,
+    "Email": "fernanda.costa@vaultkey.com.br",
+    "SenhaHash": "$2a$11$z6vIsdRKa0rNI6PEVM.FiuEtSbsdet1VBrZO83x.aGvQvuuvTwi9u",
+    "Role": "Funcionario",
+    "CriadoEm": "2026-09-18T06:12:00.236093Z"
   }
 ]

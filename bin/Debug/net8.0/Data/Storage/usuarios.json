@@ -35,10 +35,10 @@
     "CriadoEm": "2026-09-14T17:21:01.6547525Z"
   },
   {
-    "Id": 26,
-    "Email": "lauane.gabriela@vaultkey.com.br",
-    "SenhaHash": "$2a$11$OVDcz9x6Gtmf5xvwZd1.Vu5C8Se16PmxlI.uodHqnz7NlCK3SwxLy",
+    "Id": 29,
+    "Email": "larissa.fernandes@vaultkey.com.br",
+    "SenhaHash": "$2a$11$gOpt14XpkNqYJOow1UBWi.ODY3PFmSOM3vF7kE8OmkAOwlcmb65e2",
     "Role": "Funcionario",
-    "CriadoEm": "2026-09-14T17:35:32.2284405Z"
+    "CriadoEm": "2026-09-18T06:03:31.7453209Z"
   }
 ]

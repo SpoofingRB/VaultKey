@@ -65,7 +65,7 @@ namespace appointmentapi.Services
 
         public async Task<ContaCorporativaResponseDTO?> CriarViaOnboardingAsync(OnboardingDTO dto)
         {
-            if (string.IsNullOrWhiteSpace(dto.NomeCompleto) || string.IsNullOrWhiteSpace(dto.Cpf))
+            if (string.IsNullOrWhiteSpace(dto.NomeCompleto) || string.IsNullOrWhiteSpace(dto.Cpf) || string.IsNullOrWhiteSpace(dto.Departamento))
                 return null;
 
             var cpfLimpo = Regex.Replace(dto.Cpf, @"[^0-9]", "");
@@ -81,7 +81,7 @@ namespace appointmentapi.Services
             var nome = partesNome[0];
             var sobrenome = partesNome.Length > 1 ? partesNome[1] : "";
 
-            return await CriarContaAsync(nome, sobrenome, cpfLimpo, "Não definido");
+            return await CriarContaAsync(nome, sobrenome, cpfLimpo, dto.Departamento);
         }
 
         private async Task<ContaCorporativaResponseDTO> CriarContaAsync(string nome, string sobrenome, string cpf, string departamento)

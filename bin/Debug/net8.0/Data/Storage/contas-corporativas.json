@@ -60,18 +60,18 @@
     "AtualizadoEm": null
   },
   {
-    "Id": 25,
-    "UserId": 26,
+    "Id": 28,
+    "UserId": 29,
     "User": null,
-    "Nome": "Lauane",
-    "Sobrenome": "Gabriela",
-    "Cpf": "81437476112",
-    "Departamento": "N\u00E3o definido",
-    "EmailCorporativo": "lauane.gabriela@vaultkey.com.br",
-    "SenhaCriptografada": "kjCGXQ6mdtknz1CRQv4dvRW5arAOlDIhdb2345KyHtQ=",
-    "SenhaIv": "TT3tDsF6PVJHSuwCVdcZgw==",
+    "Nome": "Larissa",
+    "Sobrenome": "Fernandes",
+    "Cpf": "37308116301",
+    "Departamento": "RH",
+    "EmailCorporativo": "larissa.fernandes@vaultkey.com.br",
+    "SenhaCriptografada": "LaeRZ1/oGBmeZf4G76uTOIHpRKJp/873gnPem8zH6U4=",
+    "SenhaIv": "8KigocjMvTzwgchzDyij6A==",
     "Ativo": true,
-    "CriadoEm": "2026-09-14T17:35:33.1781058Z",
+    "CriadoEm": "2026-09-18T06:03:32.7876539Z",
     "AtualizadoEm": null
   }
 ]

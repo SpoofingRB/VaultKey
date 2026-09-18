@@ -30,21 +30,6 @@
     "AtualizadoEm": null
   },
   {
-    "Id": 23,
-    "UserId": 24,
-    "User": null,
-    "Nome": "Samara",
-    "Sobrenome": "Graziela",
-    "Cpf": "51595614800",
-    "Departamento": "Opera\u00E7\u00F5es",
-    "EmailCorporativo": "samara.graziela@vaultkey.com.br",
-    "SenhaCriptografada": "/Nhd3miwxOq9JnIFIPcLVfvPbuQbvbWdIfDVNA3S18E=",
-    "SenhaIv": "cFJphoB5jWhEM/m9XbqhMg==",
-    "Ativo": true,
-    "CriadoEm": "2026-09-14T17:20:20.9092133Z",
-    "AtualizadoEm": null
-  },
-  {
     "Id": 24,
     "UserId": 25,
     "User": null,
@@ -60,18 +45,33 @@
     "AtualizadoEm": null
   },
   {
-    "Id": 25,
-    "UserId": 26,
+    "Id": 28,
+    "UserId": 29,
     "User": null,
-    "Nome": "Erlinda",
-    "Sobrenome": "Ruble",
-    "Cpf": "85466841200",
-    "Departamento": "N\u00E3o definido",
-    "EmailCorporativo": "erlinda.ruble@vaultkey.com.br",
-    "SenhaCriptografada": "DK/VZbUjRvranb\u002BF2egD9xVVmqASp8U\u002B2qIRDq5l4pw=",
-    "SenhaIv": "w4beENcHg7q7SfywF1TUzA==",
+    "Nome": "Larissa",
+    "Sobrenome": "Fernandes",
+    "Cpf": "37308116301",
+    "Departamento": "RH",
+    "EmailCorporativo": "larissa.fernandes@vaultkey.com.br",
+    "SenhaCriptografada": "LaeRZ1/oGBmeZf4G76uTOIHpRKJp/873gnPem8zH6U4=",
+    "SenhaIv": "8KigocjMvTzwgchzDyij6A==",
     "Ativo": true,
-    "CriadoEm": "2026-09-18T05:04:04.8610239Z",
+    "CriadoEm": "2026-09-18T06:03:32.7876539Z",
+    "AtualizadoEm": null
+  },
+  {
+    "Id": 29,
+    "UserId": 30,
+    "User": null,
+    "Nome": "Fernanda",
+    "Sobrenome": "costa",
+    "Cpf": "60410413780",
+    "Departamento": "Marketing",
+    "EmailCorporativo": "fernanda.costa@vaultkey.com.br",
+    "SenhaCriptografada": "3CfNwKG87PNFiNhsphaZCy8vrOiWHSmxzqSx3JKYq6k=",
+    "SenhaIv": "XcRKuEqJgkc/k3/cvkfarg==",
+    "Ativo": true,
+    "CriadoEm": "2026-09-18T06:12:00.8073364Z",
     "AtualizadoEm": null
   }
 ]

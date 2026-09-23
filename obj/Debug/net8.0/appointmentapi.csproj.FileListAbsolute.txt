@@ -698,12 +698,14 @@ C:\Users\rtemp\OneDrive\Imagens\Faculdade\BruteForce_Test\Backend\appointmentapi
 C:\Users\rtemp\OneDrive\Imagens\Faculdade\BruteForce_Test\Backend\appointmentapi\appointmentapi\obj\Debug\net8.0\ref\appointmentapi.dll
 C:\Users\rtemp\Downloads\VaultKey\Backend\appointmentapi\appointmentapi\bin\Debug\net8.0\appsettings.Development.json
 C:\Users\rtemp\Downloads\VaultKey\Backend\appointmentapi\appointmentapi\bin\Debug\net8.0\appsettings.json
-C:\Users\rtemp\Downloads\VaultKey\Backend\appointmentapi\appointmentapi\bin\Debug\net8.0\appointmentapi.staticwebassets.endpoints.json
 C:\Users\rtemp\Downloads\VaultKey\Backend\appointmentapi\appointmentapi\bin\Debug\net8.0\Controllers\bin\Debug\net8.0\appointmentapi.deps.json
 C:\Users\rtemp\Downloads\VaultKey\Backend\appointmentapi\appointmentapi\bin\Debug\net8.0\Controllers\bin\Debug\net8.0\appointmentapi.runtimeconfig.json
 C:\Users\rtemp\Downloads\VaultKey\Backend\appointmentapi\appointmentapi\bin\Debug\net8.0\Controllers\bin\Debug\net8.0\appointmentapi.staticwebassets.endpoints.json
 C:\Users\rtemp\Downloads\VaultKey\Backend\appointmentapi\appointmentapi\bin\Debug\net8.0\Controllers\bin\Debug\net8.0\appsettings.Development.json
 C:\Users\rtemp\Downloads\VaultKey\Backend\appointmentapi\appointmentapi\bin\Debug\net8.0\Controllers\bin\Debug\net8.0\appsettings.json
+C:\Users\rtemp\Downloads\VaultKey\Backend\appointmentapi\appointmentapi\bin\Debug\net8.0\Data\Storage\contas-corporativas.json
+C:\Users\rtemp\Downloads\VaultKey\Backend\appointmentapi\appointmentapi\bin\Debug\net8.0\Data\Storage\usuarios.json
+C:\Users\rtemp\Downloads\VaultKey\Backend\appointmentapi\appointmentapi\bin\Debug\net8.0\appointmentapi.staticwebassets.endpoints.json
 C:\Users\rtemp\Downloads\VaultKey\Backend\appointmentapi\appointmentapi\bin\Debug\net8.0\appointmentapi.exe
 C:\Users\rtemp\Downloads\VaultKey\Backend\appointmentapi\appointmentapi\bin\Debug\net8.0\appointmentapi.deps.json
 C:\Users\rtemp\Downloads\VaultKey\Backend\appointmentapi\appointmentapi\bin\Debug\net8.0\appointmentapi.runtimeconfig.json
@@ -848,5 +850,3 @@ C:\Users\rtemp\Downloads\VaultKey\Backend\appointmentapi\appointmentapi\obj\Debu
 C:\Users\rtemp\Downloads\VaultKey\Backend\appointmentapi\appointmentapi\obj\Debug\net8.0\appointmentapi.pdb
 C:\Users\rtemp\Downloads\VaultKey\Backend\appointmentapi\appointmentapi\obj\Debug\net8.0\appointmentapi.genruntimeconfig.cache
 C:\Users\rtemp\Downloads\VaultKey\Backend\appointmentapi\appointmentapi\obj\Debug\net8.0\ref\appointmentapi.dll
-C:\Users\rtemp\Downloads\VaultKey\Backend\appointmentapi\appointmentapi\bin\Debug\net8.0\Data\Storage\usuarios.json
-C:\Users\rtemp\Downloads\VaultKey\Backend\appointmentapi\appointmentapi\bin\Debug\net8.0\Data\Storage\contas-corporativas.json

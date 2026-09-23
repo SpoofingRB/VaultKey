@@ -27,22 +27,7 @@
     "SenhaIv": "NQr5huDiSKUkECwixJ8eTw==",
     "Ativo": true,
     "CriadoEm": "2026-09-14T17:19:49.4211992Z",
-    "AtualizadoEm": null
-  },
-  {
-    "Id": 23,
-    "UserId": 24,
-    "User": null,
-    "Nome": "Samara",
-    "Sobrenome": "Graziela",
-    "Cpf": "51595614800",
-    "Departamento": "Opera\u00E7\u00F5es",
-    "EmailCorporativo": "samara.graziela@vaultkey.com.br",
-    "SenhaCriptografada": "/Nhd3miwxOq9JnIFIPcLVfvPbuQbvbWdIfDVNA3S18E=",
-    "SenhaIv": "cFJphoB5jWhEM/m9XbqhMg==",
-    "Ativo": true,
-    "CriadoEm": "2026-09-14T17:20:20.9092133Z",
-    "AtualizadoEm": null
+    "AtualizadoEm": "2026-09-21T22:29:15.1020923Z"
   },
   {
     "Id": 24,
@@ -72,6 +57,51 @@
     "SenhaIv": "8KigocjMvTzwgchzDyij6A==",
     "Ativo": true,
     "CriadoEm": "2026-09-18T06:03:32.7876539Z",
+    "AtualizadoEm": null
+  },
+  {
+    "Id": 29,
+    "UserId": 30,
+    "User": null,
+    "Nome": "Fernanda",
+    "Sobrenome": "costa",
+    "Cpf": "60410413780",
+    "Departamento": "Marketing",
+    "EmailCorporativo": "fernanda.costa@vaultkey.com.br",
+    "SenhaCriptografada": "3CfNwKG87PNFiNhsphaZCy8vrOiWHSmxzqSx3JKYq6k=",
+    "SenhaIv": "XcRKuEqJgkc/k3/cvkfarg==",
+    "Ativo": true,
+    "CriadoEm": "2026-09-18T06:12:00.8073364Z",
+    "AtualizadoEm": null
+  },
+  {
+    "Id": 30,
+    "UserId": 31,
+    "User": null,
+    "Nome": "Rodrigo",
+    "Sobrenome": "Gomes",
+    "Cpf": "47180705624",
+    "Departamento": "Financeiro",
+    "EmailCorporativo": "rodrigo.gomes@vaultkey.com.br",
+    "SenhaCriptografada": "yDMr6niOowjBFBnZYi/E3h6zVDWuJJqAotUcAEyDKWg=",
+    "SenhaIv": "UzEsY/CPxtMyUN1R9fSd/w==",
+    "Ativo": true,
+    "CriadoEm": "2026-09-21T22:30:02.3411339Z",
+    "AtualizadoEm": null
+  },
+  {
+    "Id": 31,
+    "UserId": 32,
+    "User": null,
+    "Nome": "Cau\u00E3",
+    "Sobrenome": "Pereira",
+    "Cpf": "88098152383",
+    "Departamento": "Expans\u00E3o",
+    "EmailCorporativo": "caua.pereira@vaultkey.com.br",
+    "SenhaCriptografada": "v65IxPqsbhxSPvajfHXLIazRrVaacN8c8uAnRSitBmA=",
+    "SenhaIv": "wPMx8bq1Swg\u002BiswPUr/6hQ==",
+    "Ativo": true,
+    "CriadoEm": "2026-09-21T22:49:33.2427919Z",
     "AtualizadoEm": null
   }
 ]

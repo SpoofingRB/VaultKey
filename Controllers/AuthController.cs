@@ -32,9 +32,9 @@ namespace appointmentapi.Controllers
         [HttpPost("login")]
         public async Task<IActionResult> Login(LoginDTO dto)
         {
-            var usuario = await _authService.ValidarLoginAsync(dto);
+            var (usuario, erro) = await _authService.ValidarLoginAsync(dto);
             if (usuario == null)
-                return Unauthorized("E-mail ou senha incorretos.");
+                return Unauthorized(erro ?? "E-mail ou senha incorretos.");
 
             await FazerLoginAsync(usuario);
             return Ok(new AuthResponseDTO { Email = usuario.Email, Role = usuario.Role });

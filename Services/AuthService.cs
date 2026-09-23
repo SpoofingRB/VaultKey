@@ -2,6 +2,9 @@ using appointmentapi.Data;
 using appointmentapi.DTOs.Auth;
 using appointmentapi.Models.AuthEntity;
 using appointmentapi.Services.Interface;
+using System;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace appointmentapi.Services
 {
@@ -9,6 +12,8 @@ namespace appointmentapi.Services
     {
         private readonly JsonDataStore _store;
         private const string ARQUIVO_USUARIOS = "usuarios.json";
+        private const int MAX_TENTATIVAS = 5;
+        private const int MINUTOS_BLOQUEIO = 15;
 
         public AuthService(JsonDataStore store)
         {
@@ -34,25 +39,61 @@ namespace appointmentapi.Services
             return admin;
         }
 
-        public async Task<User?> ValidarLoginAsync(LoginDTO dto)
+        public async Task<(User? usuario, string? erro)> ValidarLoginAsync(LoginDTO dto)
         {
             var usuarios = await _store.LerAsync<User>(ARQUIVO_USUARIOS);
-            var usuario = usuarios.FirstOrDefault(u => u.Email == dto.Email);
-            if (usuario == null) return null;
+            var usuario = usuarios.FirstOrDefault(u =>
+                u.Email.Equals(dto.Email, StringComparison.OrdinalIgnoreCase));
+
+            if (usuario == null)
+                return (null, "E-mail ou senha inválidos.");
+
+            if (usuario.BloqueadoAte.HasValue && usuario.BloqueadoAte.Value > DateTime.UtcNow)
+            {
+                var minutosRestantes = Math.Ceiling((usuario.BloqueadoAte.Value - DateTime.UtcNow).TotalMinutes);
+                return (null, $"Conta temporariamente bloqueada. Tente novamente em {minutosRestantes} minuto(s).");
+            }
+
+            if (usuario.BloqueadoAte.HasValue && usuario.BloqueadoAte.Value <= DateTime.UtcNow)
+            {
+                usuario.TentativasFalhas = 0;
+                usuario.BloqueadoAte = null;
+            }
 
             bool senhaValida = BCrypt.Net.BCrypt.Verify(dto.Senha, usuario.SenhaHash);
-            if (!senhaValida) return null;
 
-            return usuario;
+            if (!senhaValida)
+            {
+                usuario.TentativasFalhas++;
+
+                if (usuario.TentativasFalhas >= MAX_TENTATIVAS)
+                {
+                    usuario.BloqueadoAte = DateTime.UtcNow.AddMinutes(MINUTOS_BLOQUEIO);
+                    await _store.SalvarAsync(ARQUIVO_USUARIOS, usuarios);
+                    return (null, $"Muitas tentativas incorretas. Conta bloqueada por {MINUTOS_BLOQUEIO} minutos.");
+                }
+
+                await _store.SalvarAsync(ARQUIVO_USUARIOS, usuarios);
+                var restantes = MAX_TENTATIVAS - usuario.TentativasFalhas;
+                return (null, $"E-mail ou senha inválidos. {restantes} tentativa(s) restante(s) antes do bloqueio.");
+            }
+
+            if (usuario.TentativasFalhas > 0 || usuario.BloqueadoAte.HasValue)
+            {
+                usuario.TentativasFalhas = 0;
+                usuario.BloqueadoAte = null;
+                await _store.SalvarAsync(ARQUIVO_USUARIOS, usuarios);
+            }
+
+            return (usuario, null);
         }
 
         public async Task<User> CriarUsuarioFuncionarioAsync(string email, string senha)
         {
             var usuarios = await _store.LerAsync<User>(ARQUIVO_USUARIOS);
-
             var novoId = usuarios.Count > 0 ? usuarios.Max(u => u.Id) + 1 : 1;
 
-            var usuario = new User
+            var novo = new User
             {
                 Id = novoId,
                 Email = email,
@@ -60,10 +101,10 @@ namespace appointmentapi.Services
                 Role = "Funcionario"
             };
 
-            usuarios.Add(usuario);
+            usuarios.Add(novo);
             await _store.SalvarAsync(ARQUIVO_USUARIOS, usuarios);
 
-            return usuario;
+            return novo;
         }
     }
 }

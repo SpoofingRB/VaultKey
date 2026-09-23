@@ -4,6 +4,8 @@
     "Email": "admin@vaultkey.com.br",
     "SenhaHash": "$2a$11$XWC8rmjCNKqRzvWt0fC3ae3OLk/.hnP1oZWRgng/G4wQs0e8GQLQy",
     "Role": "Admin",
+    "TentativasFalhas": 0,
+    "BloqueadoAte": null,
     "CriadoEm": "2026-09-05T00:47:07.3360835Z"
   },
   {
@@ -11,6 +13,8 @@
     "Email": "marisa.dias@vaultkey.com.br",
     "SenhaHash": "$2a$11$mhDVWUyLmkulGlwafxuqG.hMs/EIEtRm1UNZFKj2ziX7VnCzugEbG",
     "Role": "Funcionario",
+    "TentativasFalhas": 0,
+    "BloqueadoAte": null,
     "CriadoEm": "2026-09-14T17:19:19.5708018Z"
   },
   {
@@ -18,6 +22,8 @@
     "Email": "larissa.barros@vaultkey.com.br",
     "SenhaHash": "$2a$11$1O5FpSus.r6TSuzXNL.NIOxsMVl7koHZ6yDZOVJcOSt6PIsFRYYp2",
     "Role": "Funcionario",
+    "TentativasFalhas": 0,
+    "BloqueadoAte": null,
     "CriadoEm": "2026-09-14T17:19:48.8138669Z"
   },
   {
@@ -25,6 +31,8 @@
     "Email": "mateus.santos@vaultkey.com.br",
     "SenhaHash": "$2a$11$dnKcfCQV5QNRDFTeu5xf/uWn/XYYdAHompStPQJgaaxQirNbrRKSu",
     "Role": "Funcionario",
+    "TentativasFalhas": 0,
+    "BloqueadoAte": null,
     "CriadoEm": "2026-09-14T17:21:01.6547525Z"
   },
   {
@@ -32,6 +40,8 @@
     "Email": "larissa.fernandes@vaultkey.com.br",
     "SenhaHash": "$2a$11$gOpt14XpkNqYJOow1UBWi.ODY3PFmSOM3vF7kE8OmkAOwlcmb65e2",
     "Role": "Funcionario",
+    "TentativasFalhas": 0,
+    "BloqueadoAte": null,
     "CriadoEm": "2026-09-18T06:03:31.7453209Z"
   },
   {
@@ -39,6 +49,53 @@
     "Email": "fernanda.costa@vaultkey.com.br",
     "SenhaHash": "$2a$11$z6vIsdRKa0rNI6PEVM.FiuEtSbsdet1VBrZO83x.aGvQvuuvTwi9u",
     "Role": "Funcionario",
+    "TentativasFalhas": 0,
+    "BloqueadoAte": null,
     "CriadoEm": "2026-09-18T06:12:00.236093Z"
+  },
+  {
+    "Id": 31,
+    "Email": "rodrigo.gomes@vaultkey.com.br",
+    "SenhaHash": "$2a$11$1moQh8Tm//KlADtSHA1XKuq4sqO86tBX256Ue/nN.W3mYmryAfMTy",
+    "Role": "Funcionario",
+    "TentativasFalhas": 0,
+    "BloqueadoAte": null,
+    "CriadoEm": "2026-09-21T22:30:01.7759763Z"
+  },
+  {
+    "Id": 32,
+    "Email": "caua.pereira@vaultkey.com.br",
+    "SenhaHash": "$2a$11$jNlbi4UqDElNodWRDfw9be.6tfvpke4KpmXfcFCOOSnQG4Biyj4mW",
+    "Role": "Funcionario",
+    "TentativasFalhas": 0,
+    "BloqueadoAte": null,
+    "CriadoEm": "2026-09-21T22:49:32.734743Z"
+  },
+  {
+    "Id": 33,
+    "Email": "lavinia.castro@vaultkey.com.br",
+    "SenhaHash": "$2a$11$m5CaktDNjKcbLTeNDPUvFuvXq0NIusRnKbnD2JJzrkmeDT88X2646",
+    "Role": "Funcionario",
+    "TentativasFalhas": 0,
+    "BloqueadoAte": null,
+    "CriadoEm": "2026-09-23T00:13:08.0032901Z"
+  },
+  {
+    "Id": 34,
+    "Email": "lucas.souza@vaultkey.com.br",
+    "SenhaHash": "$2a$11$rXJiQ8ew9JfT71Cf9jyMGefhQRX3umVRM6SFe31plXFwvx2h9f96i",
+    "Role": "Funcionario",
+    "TentativasFalhas": 0,
+    "BloqueadoAte": null,
+    "CriadoEm": "2026-09-23T00:17:03.895578Z"
+  },
+  {
+    "Id": 35,
+    "Email": "leticia.baiana@vaultkey.com.br",
+    "SenhaHash": "$2a$11$GxGS/sTXpsyKo8PFgq3lvOiOjhXi8FNLY4i2dqFqUPiBaJCbfkoDa",
+    "Role": "Funcionario",
+    "TentativasFalhas": 0,
+    "BloqueadoAte": null,
+    "CriadoEm": "2026-09-23T00:18:02.9144433Z"
   }
 ]

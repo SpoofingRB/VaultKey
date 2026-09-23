@@ -168,6 +168,19 @@ namespace appointmentapi.Services
             return true;
         }
 
+        public async Task<bool> EditarDepartamentoAsync(int contaId, string novoDepartamento)
+        {
+            var contas = await _store.LerAsync<ContaCorporativa>(ARQUIVO_CONTAS);
+            var conta = contas.FirstOrDefault(c => c.Id == contaId);
+            if (conta == null) return false;
+
+            conta.Departamento = novoDepartamento;
+            conta.AtualizadoEm = DateTime.UtcNow;
+
+            await _store.SalvarAsync(ARQUIVO_CONTAS, contas);
+            return true;
+        }
+
         public async Task<bool> ExcluirAsync(int contaId)
         {
             var contas = await _store.LerAsync<ContaCorporativa>(ARQUIVO_CONTAS);

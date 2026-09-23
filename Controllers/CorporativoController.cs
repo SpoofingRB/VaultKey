@@ -72,6 +72,16 @@ namespace appointmentapi.Controllers
             return NoContent();
         }
 
+        [HttpPut("{id}/departamento")]
+        [Authorize(Roles = "Admin")]
+        public async Task<IActionResult> EditarDepartamento(int id, EditarDepartamentoDTO dto)
+        {
+            var sucesso = await _service.EditarDepartamentoAsync(id, dto.NovoDepartamento);
+            if (!sucesso) return NotFound();
+
+            return NoContent();
+        }
+
         [HttpDelete("{id}")]
         [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Excluir(int id)

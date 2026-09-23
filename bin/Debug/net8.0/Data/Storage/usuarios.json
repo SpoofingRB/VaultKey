@@ -4,6 +4,8 @@
     "Email": "admin@vaultkey.com.br",
     "SenhaHash": "$2a$11$XWC8rmjCNKqRzvWt0fC3ae3OLk/.hnP1oZWRgng/G4wQs0e8GQLQy",
     "Role": "Admin",
+    "TentativasFalhas": 0,
+    "BloqueadoAte": null,
     "CriadoEm": "2026-09-05T00:47:07.3360835Z"
   },
   {
@@ -11,6 +13,8 @@
     "Email": "marisa.dias@vaultkey.com.br",
     "SenhaHash": "$2a$11$mhDVWUyLmkulGlwafxuqG.hMs/EIEtRm1UNZFKj2ziX7VnCzugEbG",
     "Role": "Funcionario",
+    "TentativasFalhas": 0,
+    "BloqueadoAte": null,
     "CriadoEm": "2026-09-14T17:19:19.5708018Z"
   },
   {
@@ -18,20 +22,17 @@
     "Email": "larissa.barros@vaultkey.com.br",
     "SenhaHash": "$2a$11$1O5FpSus.r6TSuzXNL.NIOxsMVl7koHZ6yDZOVJcOSt6PIsFRYYp2",
     "Role": "Funcionario",
+    "TentativasFalhas": 0,
+    "BloqueadoAte": null,
     "CriadoEm": "2026-09-14T17:19:48.8138669Z"
-  },
-  {
-    "Id": 24,
-    "Email": "samara.graziela@vaultkey.com.br",
-    "SenhaHash": "$2a$11$YIJbp.bzN09ZStT0Di.sReJ8HsnuywIWQHP0qU.mGrkCouDqFenvi",
-    "Role": "Funcionario",
-    "CriadoEm": "2026-09-14T17:20:20.3694948Z"
   },
   {
     "Id": 25,
     "Email": "mateus.santos@vaultkey.com.br",
     "SenhaHash": "$2a$11$dnKcfCQV5QNRDFTeu5xf/uWn/XYYdAHompStPQJgaaxQirNbrRKSu",
     "Role": "Funcionario",
+    "TentativasFalhas": 0,
+    "BloqueadoAte": null,
     "CriadoEm": "2026-09-14T17:21:01.6547525Z"
   },
   {
@@ -39,6 +40,35 @@
     "Email": "larissa.fernandes@vaultkey.com.br",
     "SenhaHash": "$2a$11$gOpt14XpkNqYJOow1UBWi.ODY3PFmSOM3vF7kE8OmkAOwlcmb65e2",
     "Role": "Funcionario",
+    "TentativasFalhas": 0,
+    "BloqueadoAte": null,
     "CriadoEm": "2026-09-18T06:03:31.7453209Z"
+  },
+  {
+    "Id": 30,
+    "Email": "fernanda.costa@vaultkey.com.br",
+    "SenhaHash": "$2a$11$z6vIsdRKa0rNI6PEVM.FiuEtSbsdet1VBrZO83x.aGvQvuuvTwi9u",
+    "Role": "Funcionario",
+    "TentativasFalhas": 0,
+    "BloqueadoAte": null,
+    "CriadoEm": "2026-09-18T06:12:00.236093Z"
+  },
+  {
+    "Id": 31,
+    "Email": "rodrigo.gomes@vaultkey.com.br",
+    "SenhaHash": "$2a$11$1moQh8Tm//KlADtSHA1XKuq4sqO86tBX256Ue/nN.W3mYmryAfMTy",
+    "Role": "Funcionario",
+    "TentativasFalhas": 0,
+    "BloqueadoAte": null,
+    "CriadoEm": "2026-09-21T22:30:01.7759763Z"
+  },
+  {
+    "Id": 32,
+    "Email": "caua.pereira@vaultkey.com.br",
+    "SenhaHash": "$2a$11$jNlbi4UqDElNodWRDfw9be.6tfvpke4KpmXfcFCOOSnQG4Biyj4mW",
+    "Role": "Funcionario",
+    "TentativasFalhas": 0,
+    "BloqueadoAte": null,
+    "CriadoEm": "2026-09-21T22:49:32.734743Z"
   }
 ]

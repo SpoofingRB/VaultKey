@@ -103,5 +103,50 @@
     "Ativo": true,
     "CriadoEm": "2026-09-21T22:49:33.2427919Z",
     "AtualizadoEm": null
+  },
+  {
+    "Id": 32,
+    "UserId": 33,
+    "User": null,
+    "Nome": "Lavinia",
+    "Sobrenome": "Castro",
+    "Cpf": "36872385391",
+    "Departamento": "CEO",
+    "EmailCorporativo": "lavinia.castro@vaultkey.com.br",
+    "SenhaCriptografada": "w6kSR55Bl5NX53QI99VMKWy5QxfrjaGwT874vlIXl5g=",
+    "SenhaIv": "p3g1gaZ6naBOtm6xHCPtiw==",
+    "Ativo": true,
+    "CriadoEm": "2026-09-23T00:13:09.6467439Z",
+    "AtualizadoEm": null
+  },
+  {
+    "Id": 33,
+    "UserId": 34,
+    "User": null,
+    "Nome": "Lucas",
+    "Sobrenome": "Souza",
+    "Cpf": "11909557501",
+    "Departamento": "T.I",
+    "EmailCorporativo": "lucas.souza@vaultkey.com.br",
+    "SenhaCriptografada": "rWYsSopD03\u002BpWktR64dIUOP5KzZeki3wKTxE1Mx8FXs=",
+    "SenhaIv": "P147\u002BmIxK25/W3SE8sk6XQ==",
+    "Ativo": true,
+    "CriadoEm": "2026-09-23T00:17:04.4825764Z",
+    "AtualizadoEm": null
+  },
+  {
+    "Id": 34,
+    "UserId": 35,
+    "User": null,
+    "Nome": "Leticia",
+    "Sobrenome": "baiana",
+    "Cpf": "30523679270",
+    "Departamento": "Limpeza",
+    "EmailCorporativo": "leticia.baiana@vaultkey.com.br",
+    "SenhaCriptografada": "zUlL8Rc9sOEI9ZPzoCH/c32Av/Ach1TIJOFcBXxdHos=",
+    "SenhaIv": "HIVLEvKHu996O47ljnAoXw==",
+    "Ativo": true,
+    "CriadoEm": "2026-09-23T00:18:03.4594281Z",
+    "AtualizadoEm": null
   }
 ]

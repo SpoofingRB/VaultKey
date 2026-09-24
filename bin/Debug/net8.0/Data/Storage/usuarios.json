@@ -70,5 +70,32 @@
     "TentativasFalhas": 0,
     "BloqueadoAte": null,
     "CriadoEm": "2026-09-21T22:49:32.734743Z"
+  },
+  {
+    "Id": 33,
+    "Email": "lavinia.castro@vaultkey.com.br",
+    "SenhaHash": "$2a$11$m5CaktDNjKcbLTeNDPUvFuvXq0NIusRnKbnD2JJzrkmeDT88X2646",
+    "Role": "Funcionario",
+    "TentativasFalhas": 0,
+    "BloqueadoAte": null,
+    "CriadoEm": "2026-09-23T00:13:08.0032901Z"
+  },
+  {
+    "Id": 34,
+    "Email": "lucas.souza@vaultkey.com.br",
+    "SenhaHash": "$2a$11$rXJiQ8ew9JfT71Cf9jyMGefhQRX3umVRM6SFe31plXFwvx2h9f96i",
+    "Role": "Funcionario",
+    "TentativasFalhas": 0,
+    "BloqueadoAte": null,
+    "CriadoEm": "2026-09-23T00:17:03.895578Z"
+  },
+  {
+    "Id": 35,
+    "Email": "leticia.baiana@vaultkey.com.br",
+    "SenhaHash": "$2a$11$GxGS/sTXpsyKo8PFgq3lvOiOjhXi8FNLY4i2dqFqUPiBaJCbfkoDa",
+    "Role": "Funcionario",
+    "TentativasFalhas": 0,
+    "BloqueadoAte": null,
+    "CriadoEm": "2026-09-23T00:18:02.9144433Z"
   }
 ]

@@ -1,6 +1,7 @@
 using appointmentapi.Data;
 using appointmentapi.DTOs.Auth;
 using appointmentapi.Models.AuthEntity;
+using appointmentapi.Models.CorporativoEntity;
 using appointmentapi.Services.Interface;
 using System;
 using System.Linq;
@@ -11,13 +12,16 @@ namespace appointmentapi.Services
     public class AuthService : IAuthService
     {
         private readonly JsonDataStore _store;
+        private readonly ICryptoService _crypto;
         private const string ARQUIVO_USUARIOS = "usuarios.json";
+        private const string ARQUIVO_CONTAS = "contas-corporativas.json";
         private const int MAX_TENTATIVAS = 5;
         private const int MINUTOS_BLOQUEIO = 15;
 
-        public AuthService(JsonDataStore store)
+        public AuthService(JsonDataStore store, ICryptoService crypto)
         {
             _store = store;
+            _crypto = crypto;
         }
 
         public async Task<User?> SeedAdminAsync(RegisterDTO dto)
@@ -105,6 +109,30 @@ namespace appointmentapi.Services
             await _store.SalvarAsync(ARQUIVO_USUARIOS, usuarios);
 
             return novo;
+        }
+
+        public async Task<bool> RedefinirSenhaAsync(string cpf, string novaSenha)
+        {
+            var contas = await _store.LerAsync<ContaCorporativa>(ARQUIVO_CONTAS);
+            var conta = contas.FirstOrDefault(c => c.Cpf == cpf);
+            if (conta == null) return false;
+
+            var usuarios = await _store.LerAsync<User>(ARQUIVO_USUARIOS);
+            var usuario = usuarios.FirstOrDefault(u => u.Id == conta.UserId);
+            if (usuario == null) return false;
+
+            usuario.SenhaHash = BCrypt.Net.BCrypt.HashPassword(novaSenha);
+            usuario.TentativasFalhas = 0;
+            usuario.BloqueadoAte = null;
+            await _store.SalvarAsync(ARQUIVO_USUARIOS, usuarios);
+
+            var (senhaCifrada, iv) = _crypto.Criptografar(novaSenha);
+            conta.SenhaCriptografada = senhaCifrada;
+            conta.SenhaIv = iv;
+            conta.AtualizadoEm = DateTime.UtcNow;
+            await _store.SalvarAsync(ARQUIVO_CONTAS, contas);
+
+            return true;
         }
     }
 }

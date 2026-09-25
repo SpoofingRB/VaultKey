@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
 using appointmentapi.DTOs.Auth;
@@ -45,6 +46,20 @@ namespace appointmentapi.Controllers
         {
             await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
             return Ok();
+        }
+
+        [HttpPost("redefinir-senha")]
+        [AllowAnonymous]
+        public async Task<IActionResult> RedefinirSenha(RedefinirSenhaDTO dto)
+        {
+            if (string.IsNullOrWhiteSpace(dto.Cpf) || dto.NovaSenha.Length < 8)
+                return BadRequest("CPF obrigatório e nova senha com pelo menos 8 caracteres.");
+
+            var sucesso = await _authService.RedefinirSenhaAsync(dto.Cpf, dto.NovaSenha);
+            if (!sucesso)
+                return BadRequest("Não foi possível redefinir a senha. Confira o CPF informado.");
+
+            return Ok(new { mensagem = "Senha redefinida com sucesso." });
         }
 
         private async Task FazerLoginAsync(User usuario)

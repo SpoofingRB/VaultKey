@@ -8,5 +8,6 @@ namespace appointmentapi.Services.Interface
         Task<User?> SeedAdminAsync(RegisterDTO dto);
         Task<(User? usuario, string? erro)> ValidarLoginAsync(LoginDTO dto);
         Task<User> CriarUsuarioFuncionarioAsync(string email, string senha);
+        Task<bool> RedefinirSenhaAsync(string cpf, string novaSenha);
     }
 }
